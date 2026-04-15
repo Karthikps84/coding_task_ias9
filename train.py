@@ -238,8 +238,6 @@ class OrientationNet(nn.Module):
       - Continuous mapping to SO(3) (no discontinuities unlike Euler angles)
       - Gram-Schmidt orthogonalisation recovers valid rotation matrix
       - Geodesic loss directly optimises angular error on the manifold
-
-    Optional: MC-Dropout for epistemic uncertainty estimation.
     """
 
     def __init__(self, dropout_p: float = 0.3, use_pretrained: bool = True):
@@ -678,6 +676,7 @@ def main():
     if args.eval_only:
         ckpt = torch.load(os.path.join(args.ckpt_dir, "best_model.pt"), map_location=DEVICE)
         model.load_state_dict(ckpt["model_state"])
+        model = model.to(DEVICE)
         print(f"  Loaded checkpoint (epoch {ckpt['epoch']}, val_MAE={ckpt['val_mae_deg']:.2f}°)")
     else:
         trainer = Trainer(model, train_loader, val_loader, config)
