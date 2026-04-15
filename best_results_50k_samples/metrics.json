@@ -1,0 +1,11 @@
+{
+  "mean_geodesic_error_deg": 1.2342191934585571,
+  "median_geodesic_error_deg": 0.9093518257141113,
+  "std_geodesic_error_deg": 6.140926361083984,
+  "pct_within_5deg": 99.42,
+  "pct_within_10deg": 99.46000000000001,
+  "pct_within_20deg": 99.5,
+  "phi1_MAE": 3.9498066575397095,
+  "phi_MAE": 0.4276826309379867,
+  "phi2_MAE": 0.7712240800645981
+}
