@@ -145,18 +145,7 @@ results/
 
 ---
 
-## What Would Be Done Next (with more time)
-
-1. **Crystal symmetry handling:** Apply LNO point-group symmetry operators during loss computation to resolve equivalent orientations
-2. **Equivariant networks (e3nn):** SE(3)-equivariant layers that respect the physical symmetry of diffraction patterns
-3. **Normalising flows on SO(3):** Full probability distribution over orientations, not just a point estimate
-4. **Contrastive pre-training:** Self-supervised learning on unlabelled experimental patterns before fine-tuning
-5. **Experimental domain adaptation:** Adapt from simulated to real experimental data via style transfer or adversarial training
-
----
-
 ## References
 
 1. Scheunert et al. (2026). *Determining the grain orientations of battery materials from electron diffraction patterns using CNNs.* npj Computational Materials.
 2. Zhou et al. (2019). *On the Continuity of Rotation Representations in Neural Networks.* CVPR.
-3. Tan & Le (2019). *EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks.* ICML.
